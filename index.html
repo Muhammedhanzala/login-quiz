@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup/Login Page</title>
+    <link rel="stylesheet" href="quiz login/style.css">
+</head>
+<body>
+    <div id="main-content" class="hidden">
+        <div class="app">
+            <h1>HTMl Quiz</h1>
+            <div class="quiz">
+                <h2 id="question">What does HTML stand for?
+    
+                </h2>
+                <div id="answer-button">
+                    <button class="btn">
+                        Hyber Text Markup Language
+                    </button>
+                    <button class="btn">
+                        Hyberlinks and Text Markup Language
+                    </button>
+                    <button class="btn">
+                        Home Tool Markup Language
+                    </button>
+                </div>
+                <button id="next-btn">
+                    Next
+                </button>
+            </div>
+        
+        </div>    </div>
+    
+    <div id="signup-login">
+        <h2>Signup or Login</h2>
+        <button onclick="showSignup()">Signup</button>
+        <button onclick="showLogin()">Login</button>
+        
+        <div id="signup-form" class="hidden">
+            <h3>Signup</h3>
+            <input type="text" id="signup-username" placeholder="Username">
+            <input type="password" id="signup-password" placeholder="Password">
+            <button onclick="signup()">Create Account</button>
+        </div>
+        
+        <div id="login-form" class="hidden">
+            <h3>Login</h3>
+            <input type="text" id="login-username" placeholder="Username">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+    
+    <script src="quiz login/app.js"></script>
+</body>
+</html>
